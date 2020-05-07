@@ -1,0 +1,132 @@
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  font: 10px sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: linear-gradient(120deg, #444, #111);
+}
+
+.container footer {
+  background-color: transparent;
+  font-size: 1.5em;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 20px;
+}
+
+.container footer p {
+  color: whitesmoke;
+}
+
+.container footer p span {
+  color: cornflowerblue;
+}
+
+.container #title {
+  text-align: center;
+  font-size: 2rem;
+  fill: cornflowerblue;
+}
+
+.container .subtitle {
+  fill: orange !important;
+}
+
+.container .dot {
+  stroke: white;
+  opacity: 0.8;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-animation: animate 1s ease-in;
+          animation: animate 1s ease-in;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+.container .dot:hover {
+  opacity: 0.5;
+  r: 8;
+}
+
+.container .graph {
+  display: block;
+  margin: auto;
+  background-color: transparent;
+  border-radius: 30px;
+  padding: 10px;
+  -webkit-box-shadow: 10px 0px 30px rgba(0, 0, 0, 0.514), -10px -10px 20px #5e5e5e;
+          box-shadow: 10px 0px 30px rgba(0, 0, 0, 0.514), -10px -10px 20px #5e5e5e;
+}
+
+.container .graph text {
+  fill: white;
+}
+
+.container .graph path {
+  stroke: white;
+}
+
+.container .graph line {
+  stroke: white;
+}
+
+.container .tooltip {
+  position: absolute;
+  padding: 10px;
+  font: 12px sans-serif;
+  background-color: cornflowerblue;
+  border: none;
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.container .axis path, .container .axis line {
+  fill: none;
+  stroke: white;
+  shape-rendering: crispEdges;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    cy: 550;
+    r: 0;
+  }
+  50% {
+    cy: none;
+  }
+  80% {
+    r: 10;
+  }
+  100% {
+    r: 6;
+  }
+}
+
+@keyframes animate {
+  0% {
+    cy: 550;
+    r: 0;
+  }
+  50% {
+    cy: none;
+  }
+  80% {
+    r: 10;
+  }
+  100% {
+    r: 6;
+  }
+}
+/*# sourceMappingURL=style.css.map */
